@@ -61,6 +61,9 @@
   .tagline{max-width:34ch;color:var(--ink-soft);font-size:16px;line-height:1.6;margin-top:4px}
   .hero-art{width:min(300px,70vw);margin-block:12px;opacity:.92}
   .hero-art img{filter:drop-shadow(0 18px 28px var(--shadow))}
+  @media (prefers-color-scheme: dark){
+    .hero-art img,.divider img{filter:invert(1) drop-shadow(0 18px 28px var(--shadow))}
+  }
   .meta-card{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;padding:20px 28px;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
   .meta-card .item{display:flex;flex-direction:column;gap:4px}
   .meta-card .label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
@@ -132,7 +135,7 @@
     <p class="tagline">Une après-midi au soleil qui se prolongera jusqu'au bout de la nuit.</p>
 
     <div class="hero-art">
-      <img src="images/maison.webp" alt="Illustration au crayon de la maison de la fête">
+      <img src="images/maison.png" alt="Illustration au crayon de la maison de la fête">
     </div>
 
     <div class="meta-card">
